@@ -16,11 +16,12 @@ By Signup = By.cssSelector("a#header-sign-up-btn");
 
 
 
-public void OpenBrowser(WebDriver driver) throws IOException {
+public void OpenBrowser(WebDriver driver) throws IOException, InterruptedException {
 	this.driver = driver;
 	driver=initializeDriver();	
 	driver.get(prop.getProperty("url"));
 	driver.findElement(Signup).click();
+	Thread.sleep(3000);
 }
 public WebElement SignUp()
 {

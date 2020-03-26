@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-regression">
-                    <span>C:\Users\Said\eclipse-workspace2\Xml.DataDriven\Data\file.xml</span>
+                    <span>C:\Users\Said\git\QAgithub\newgit\Xml.DataDriven\Data\file.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,8 +130,11 @@
                   <span class="method-name">AddingContacts</span>
                   <span class="parameters">(Said Hamid, HoGroups@gmail.com, abc123, abc123)</span>
                   <div class="stack-trace">java.lang.NullPointerException
-	at Page.SignUpPage.FillTheForm(SignUpPage.java:32)
-	at Test.NewUser.AddingContacts(NewUser.java:29)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
+	at Page.SignUpPage.FillTheForm(SignUpPage.java:43)
+	at Test.NewUser.AddingContacts(NewUser.java:31)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -142,14 +145,14 @@
         </div> <!-- panel regression -->
         <div panel-name="test-xml-regression" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Said\eclipse-workspace2\Xml.DataDriven\Data\file.xml</span>
+            <span class="header-content">C:\Users\Said\git\QAgithub\newgit\Xml.DataDriven\Data\file.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;3&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;regression&quot;&gt;
-  &lt;test thread-count=&quot;3&quot; name=&quot;NewUser&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;regression&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;NewUser&quot;&gt;
     &lt;parameter name=&quot;Email&quot; value=&quot;HoGroups@gmail.com&quot;/&gt;
     &lt;parameter name=&quot;FullName&quot; value=&quot;Said Hamid&quot;/&gt;
     &lt;parameter name=&quot;Password&quot; value=&quot;abc123&quot;/&gt;
@@ -199,12 +202,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'AddingContacts')
 data.setCell(0, 2, 'Test.NewUser')
-data.setCell(0, 3, 8746);
+data.setCell(0, 3, 14571);
 window.suiteTableData['regression']= { tableData: data, tableDiv: 'times-div-regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-regression">
               </div> <!-- times-div-regression -->
             </div> <!-- times-div -->
