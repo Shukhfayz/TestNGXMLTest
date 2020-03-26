@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [regression]">
+  <test thread-count="3" name="NewUser(failed)">
+    <parameter name="Email" value="HoGroups@gmail.com"/>
+    <parameter name="FullName" value="Said Hamid"/>
+    <parameter name="Password" value="abc123"/>
+    <parameter name="PasswordConf" value="abc123"/>
+    <classes>
+      <class name="Test.NewUser">
+        <methods>
+          <include name="AddingContacts" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Test.NewUser -->
+    </classes>
+  </test> <!-- NewUser(failed) -->
+</suite> <!-- Failed suite [regression] -->
